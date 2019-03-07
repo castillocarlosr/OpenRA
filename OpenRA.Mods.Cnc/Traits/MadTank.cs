@@ -117,7 +117,7 @@ namespace OpenRA.Mods.Cnc.Traits
 				tick = 0;
 			}
 		}
-
+		//This is what needs to change.  Carlos, Charles, Rick
 		public IEnumerable<IOrderTargeter> Orders
 		{
 			get
@@ -126,7 +126,7 @@ namespace OpenRA.Mods.Cnc.Traits
 				yield return new DeployOrderTargeter("Detonate", 5);
 			}
 		}
-
+		//This is what needs to change.  Carlos, Charles, Rick
 		Order IIssueOrder.IssueOrder(Actor self, IOrderTargeter order, Target target, bool queued)
 		{
 			if (order.OrderID != "DetonateAttack" && order.OrderID != "Detonate")
